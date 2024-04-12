@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:blanchedalmond;
+    color: black;
+}
+
+header {
+    background-color: burlywood;
+    padding: 10px;
+    box-shadow: 0 2px 4px white(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 35px;
+    color: black;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-right: 25px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #ff6600;
+}
+#cardapio {
+    padding: 20px;
+    background-color: burlywood;
+    margin: 20px auto;
+    max-width: 1200px; /* Aumentando a largura máxima */
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.grupo {
+    flex: 1 1 700px; /* Cada grupo de itens expandirá para ocupar o espaço disponível */
+    margin-right: 20px;
+    min-height: 400px;
+    margin-bottom: 20px;
+}
+.categoria {
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.categoria h3 {
+    margin-top: 0;
+}
+.itens ul {
+    padding-left: 0;
+    list-style: none;
+}
+.itens ul li {
+    margin-bottom: 25px;
+}
+.itens ul li:last-child {
+    margin-bottom: 0;
+}
+.cores {
+    color: white;
+    font-style: italic;
+}
+.itens ul li b {
+    display: inline-block;
+}

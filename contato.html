@@ -1,3 +1,42 @@
-<h1> contato </h1>
-<hr>
-<input type = 'email'> placeholder ='email@email.com'>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Panificadora Villa Carvalho</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pedido de Entregas</h1>
+        <div class="contact-info">
+            <p>Para fazer um pedido de entrega, entre em contato conosco pelo número:</p>
+            <p><strong>Telefone:</strong> (34) 9-9881-1616</p>
+        </div>
+        <form action="/submit_pedido" method="post">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" required><br>
+
+            <label for="telefone">Telefone para contato:</label><br>
+            <input type="text" id="telefone" name="telefone" required><br>
+
+            <label for="pedido">Pedido:</label><br>
+            <textarea id="pedido" name="pedido" rows="4" required></textarea><br>
+
+            <input type="submit" value="Enviar Pedido">
+        </form>
+        <hr>
+        <h2>Feedback</h2>
+        <p>Gostaríamos de ouvir sua opinião sobre nossos serviços. Por favor, deixe seu feedback abaixo:</p>
+        <form action="#" method="post" onsubmit="return validarFormulario()">
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" required onkeyup="contarCaracteres()"></textarea>
+            <div id="contador-caracteres-feedback">0/250</div>
+            <input type="submit" value="Enviar Feedback">
+        </form>
+    </div>
+</body>
+</html>
